@@ -10,11 +10,11 @@
     <h1>Edit Hero</h1>
     <form action="{% url 'superheros:edit' %}" method="post">
         {% csrf_token %}
-        Name: <input type="text" name="name" id="name" value="{"><br />
-        Alter Ego: <input type="text" name="alter_ego" id="alter_ego"><br />
-        Primary Ability: <input type="text" name="primary" id="primary"><br />
-        Secondary Ability: <input type="text" name="secondary" id="secondary"><br />
-        Catchphrase: <input type="text" name="catchphrase" id="catchphrase"><br />
+        Name: <input type="text" name="name" id="name" value=""><br />
+        Alter Ego: <input type="text" name="alter_ego" id="alter_ego" value=""><br />
+        Primary Ability: <input type="text" name="primary" id="primary" value=""><br />
+        Secondary Ability: <input type="text" name="secondary" id="secondary" value=""><br />
+        Catchphrase: <input type="text" name="catchphrase" id="catchphrase" value=""><br />
         <input type="submit" value="Edit">
     </form>
     
